@@ -1,5 +1,7 @@
-const assert = require("assert");
-const dijkstra = require("./path/to/dijkstra_function"); // Update with the actual path
+const fs = require('fs');
+const assert = require('assert');
+
+eval(fs.readFileSync('code.js')+'');
 
 function runTests() {
   // Test case 1: Simple graph
