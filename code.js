@@ -12,9 +12,6 @@ function dijkstra(graph, sourceNode) {
   while (visitedNodes.length !== graph.length) {
     let minDistance = Infinity;
     let node = 0;
-      // I origionally had this set to 0 but expreienced some issues 
-      // so I set it to-1 in order to make sure I didn't miss any possible cases.
-
     // Find the unvisited node with the smallest distance
     for (let i = 0; i < graph.length; i++) {
       if (distance[i] < minDistance && !visitedNodes.includes(i)) {
