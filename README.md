@@ -23,3 +23,12 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The big $\Theta$ complexity of my implementation would be $\Theta(|V^2|)$. When finding the minimum distance node each iteration of the loop would be $\Theta|V|$. Since this is a nested loop it gives us a complexity of $\Theta|V^2|$ for finding the minimum distnace nodes for all iterations. Now moving onto updating the distances of the adjacent nodes. The algorithm will update selected node's distance from the neighboring nodes. This requires $|V|$ per iteration   
+
+I referenced the repository dijkstra-s-algorithm-howardthegr8one to get an idea of what the implmentation and test code should look like. I also referenced https://www.geeksforgeeks.org/introduction-to-dijkstras-shortest-path-algorithm/ to get a further explination of what Dijkstra's algorithm was. Referenced class videos and slides as well (slides 37-43). 
+
+I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.
