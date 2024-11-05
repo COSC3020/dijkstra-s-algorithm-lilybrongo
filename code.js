@@ -20,9 +20,6 @@ function dijkstra(graph, sourceNode) {
       }
     }
 
-    // If no reachable unvisited node remains then exit the loop
-   // if (node === -1) break;
-
     visitedNodes.push(node);
 
     // Update distances to adjacent nodes, and work on calculating nextNode
