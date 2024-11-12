@@ -29,8 +29,8 @@ function dijkstra(graph, sourceNode) {
     }
     // This is required because if no unvisited node was found, I need to be able to break the loop
     if (node === -1) break;
-
-    visitedNodes.push(node);
+    //needed to modify from push to add in order to work with .has()
+    visitedNodes.add(node);
     
     // Update distances to adjacent nodes, and work on calculating nextNode
     // ran into errors on my testing revieved [0,7,8,10,8,5] which was not the expected so added in these tests
