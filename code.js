@@ -33,6 +33,7 @@ function dijkstra(graph, sourceNode) {
       
       // Update distances to adjacent nodes, and work on calculating nextNode
       // ran into errors on my testing revieved [0,7,8,10,8,5] which was not the expected so added in these tests
+      //modified testing and code to see if changes occured  
       for (let nextNode = 0; nextNode < graph.length; nextNode++) {
 
         if (graph[node][nextNode] > 0 && !visitedNodes.has(nextNode)) {
